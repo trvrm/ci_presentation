@@ -12002,7 +12002,7 @@ a.anchor-link {
 <li><p>Software development</p>
 </li>
 </ul>
-<p>Many of the same techniques apply, but I'll be focussing on software development.</p>
+<p>Many of the same techniques apply, but I'll be focusing on software development.</p>
 
 </div>
 </div>
@@ -12039,9 +12039,11 @@ a.anchor-link {
 </ul>
 <h3 id="Near-realtime">Near realtime<a class="anchor-link" href="#Near-realtime">&#182;</a></h3><ul>
 <li>Chatrooms</li>
-<li>Slack</li>
-<li>Mattermost</li>
-<li><a href="https://gitter.im/pydata/pandas">https://gitter.im/pydata/pandas</a></li>
+<li>Slack  (<a href="https://civictechto.slack.com/messages/general/team/jrootham/">https://civictechto.slack.com/messages/general/team/jrootham/</a>)</li>
+<li><p>Mattermost</p>
+</li>
+<li><p><a href="https://gitter.im/pydata/pandas">https://gitter.im/pydata/pandas</a></p>
+</li>
 </ul>
 <h3 id="Asynchonous">Asynchonous<a class="anchor-link" href="#Asynchonous">&#182;</a></h3><ul>
 <li>Email</li>
@@ -12062,13 +12064,21 @@ a.anchor-link {
 <li>The only person who knows how to import a certain file is a grad student who left 3 years ago</li>
 <li>The reasons <em>behind</em> processes aren't documented</li>
 </ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Tools</p>
 <ul>
 <li>Wiki (<a href="https://github.com/pandas-dev/pandas/wiki">https://github.com/pandas-dev/pandas/wiki</a>)</li>
 <li>Evernote</li>
-<li>Lotus Notes</li>
-<li>Sphinx: (<a href="http://pandas.pydata.org/pandas-docs/stable/">http://pandas.pydata.org/pandas-docs/stable/</a>)</li>
-<li>Blogs</li>
+<li>Sphinx (<a href="http://pandas.pydata.org/pandas-docs/stable/">http://pandas.pydata.org/pandas-docs/stable/</a>)</li>
+<li>Blogs  (<a href="https://trvrm.github.io/">https://trvrm.github.io/</a>)</li>
 </ul>
 <p>Record:</p>
 <ul>
@@ -12087,27 +12097,22 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Issue-Tracking">Issue Tracking<a class="anchor-link" href="#Issue-Tracking">&#182;</a></h2><ul>
-<li>What went wrong?</li>
-<li>Can it be reproduced?</li>
-<li>Who's working on it?</li>
-<li>Is it fixed yet?</li>
-</ul>
-<p>Examples</p>
+<h2 id="Sharing-Code,-Processes,-and-documentation">Sharing Code, Processes, and documentation<a class="anchor-link" href="#Sharing-Code,-Processes,-and-documentation">&#182;</a></h2><p><a href="https://try.jupyter.org/">https://try.jupyter.org/</a></p>
+<p><a href="https://nbviewer.jupyter.org/">https://nbviewer.jupyter.org/</a></p>
+<p>Jupyter notebooks are an <em>incredible</em> tool.</p>
 <ul>
-<li><a href="https://github.com/pandas-dev/pandas/issues/11930">https://github.com/pandas-dev/pandas/issues/11930</a></li>
-<li>Trello</li>
+<li>Write code</li>
+<li>Write documentation</li>
+<li>Write books</li>
+<li>Collaborate</li>
+<li>Explore</li>
 </ul>
+<p>This presentation is written in Jupyter.</p>
+<p>Sample use case</p>
+<p><a href="https://github.com/trvrm/notebooks/blob/master/bulk_psycopg2_inserts.ipynb">https://github.com/trvrm/notebooks/blob/master/bulk_psycopg2_inserts.ipynb</a></p>
+<p>Publish to blog:</p>
+<p><a href="https://trvrm.github.io/bulk-psycopg2-inserts.html">https://trvrm.github.io/bulk-psycopg2-inserts.html</a></p>
 
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Unit-Testing">Unit Testing<a class="anchor-link" href="#Unit-Testing">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
@@ -12138,7 +12143,12 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Choose the tool for your framework/library/language.</p>
-<p>I use nosetests</p>
+<ul>
+<li>write your tests concurrently with your code</li>
+<li>write regression tests  (e.g. nosetests)</li>
+<li>use code coverage tools  (e.g. coverage)</li>
+<li>use code quality tools (e.g. flake8)</li>
+</ul>
 
 </div>
 </div>
@@ -12153,7 +12163,8 @@ a.anchor-link {
 <li>Mercurial</li>
 <li>Subversion</li>
 </ul>
-<p>etc.</p>
+<p><strong>Track everything in source control</strong></p>
+<p>Source control isn't just for code.  This presentation is available for collaboration at <a href="https://github.com/trvrm/ci_presentation">https://github.com/trvrm/ci_presentation</a></p>
 
 </div>
 </div>
@@ -12163,8 +12174,10 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Continuous-Integration">Continuous Integration<a class="anchor-link" href="#Continuous-Integration">&#182;</a></h2><ul>
-<li><a href="https://travis-ci.org/pandas-dev/pandas">https://travis-ci.org/pandas-dev/pandas</a></li>
+<h2 id="Continuous-Integration">Continuous Integration<a class="anchor-link" href="#Continuous-Integration">&#182;</a></h2><p><a href="https://travis-ci.org/pandas-dev/pandas">https://travis-ci.org/pandas-dev/pandas</a></p>
+<ul>
+<li>Tests are run automatically on every commit.</li>
+<li>Failed tests prevent upstream merges</li>
 </ul>
 
 </div>
@@ -12183,19 +12196,84 @@ a.anchor-link {
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Suggestions">Suggestions<a class="anchor-link" href="#Suggestions">&#182;</a></h2><ul>
+<li>pick the right tools for your process</li>
+<li>don't be afraid to write your own</li>
+<li>automate everything that can be automated</li>
+<li>test everything</li>
+<li>Do end-to-end integration as soon as possible.</li>
+<li>Mistakes increase in cost the longer it takes to find them</li>
+</ul>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Specifics">Specifics<a class="anchor-link" href="#Specifics">&#182;</a></h2><p><strong>TMIST</strong></p>
+<h4 id="Who,-what,-how,-why,-when,-where?">Who, what, how, why, when, where?<a class="anchor-link" href="#Who,-what,-how,-why,-when,-where?">&#182;</a></h4><ul>
+<li>What are your sites?</li>
+<li>What data are you collecting?</li>
+<li>What time frame will you collect data over?</li>
+<li>What processes need implemented and documented?</li>
+<li>How do you record the rationale behind those processes?</li>
+<li>How do you manage changes to those processes?</li>
+</ul>
 
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Discussion">Discussion<a class="anchor-link" href="#Discussion">&#182;</a></h1>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Resources">Resources<a class="anchor-link" href="#Resources">&#182;</a></h2><ul>
+<li><a href="https://github.com/">https://github.com/</a></li>
+<li><a href="https://www.mercurial-scm.org/">https://www.mercurial-scm.org/</a></li>
+<li><a href="https://about.mattermost.com/">https://about.mattermost.com/</a></li>
+<li><a href="https://travis-ci.org/">https://travis-ci.org/</a></li>
+<li><a href="http://www.fabfile.org/">http://www.fabfile.org/</a></li>
+<li><a href="http://www.pyinvoke.org/">http://www.pyinvoke.org/</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a></li>
+<li><a href="http://www.mkdocs.org/">http://www.mkdocs.org/</a></li>
+<li><a href="https://try.jupyter.org/">https://try.jupyter.org/</a></li>
+<li><a href="https://coverage.readthedocs.io/en/coverage-4.3.4/">https://coverage.readthedocs.io/en/coverage-4.3.4/</a></li>
+<li><a href="http://flake8.pycqa.org/en/latest/">http://flake8.pycqa.org/en/latest/</a></li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Thank-you!">Thank you!<a class="anchor-link" href="#Thank-you!">&#182;</a></h1><p>Trevor Morgan</p>
+<p><a href="https://trvrm.github.io">https://trvrm.github.io</a>
+<a href="https://nooro.com/">https://nooro.com/</a></p>
+
+</div>
+</div>
 </div></section></section>
 </div>
 </div>
