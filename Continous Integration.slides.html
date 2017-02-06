@@ -11916,6 +11916,16 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="New-model">New model<a class="anchor-link" href="#New-model">&#182;</a></h2><p>Deployment happens continuously</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Fail-Fast!">Fail Fast!<a class="anchor-link" href="#Fail-Fast!">&#182;</a></h1>
 </div>
 </div>
@@ -11979,30 +11989,13 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Considerations:">Considerations:<a class="anchor-link" href="#Considerations:">&#182;</a></h4><ul>
 <li>Site (facility) management, including changes over time.</li>
-<li>Metadata management</li>
+<li>Metadata management.</li>
 <li>Data collection.</li>
+<li>Interviewer training and management.</li>
 <li>Codebooks.</li>
-<li>Dashboards</li>
+<li>Dashboards.</li>
+<li>Data exports.</li>
 </ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Continuous-Integration">Continuous Integration<a class="anchor-link" href="#Continuous-Integration">&#182;</a></h2><p>CI can be applied at several levels.</p>
-<ul>
-<li><p>Enterprise</p>
-</li>
-<li><p>Processes</p>
-</li>
-<li><p>Software development</p>
-</li>
-</ul>
-<p>Many of the same techniques apply, but I'll be focusing on software development.</p>
 
 </div>
 </div>
@@ -12020,7 +12013,7 @@ a.anchor-link {
 <li>Unit testing</li>
 <li>Source Control</li>
 <li>CI</li>
-<li>Dashboards</li>
+<li>Dashboards/Monitoring</li>
 </ul>
 
 </div>
@@ -12131,8 +12124,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Write the test before fixing the code!</p>
-<p><a href="https://github.com/pandas-dev/pandas/pull/11937/commits/7f00dbcd7dcef6c1354e36381e1501b5e95208ff">https://github.com/pandas-dev/pandas/pull/11937/commits/7f00dbcd7dcef6c1354e36381e1501b5e95208ff</a></p>
+<p><img src="images/02_CD_test_strategy_low-res.jpg" alt="testing"></p>
 
 </div>
 </div>
@@ -12142,9 +12134,9 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Choose the tool for your framework/library/language.</p>
+<p>Write the test before fixing the code.</p>
+<p><a href="https://github.com/pandas-dev/pandas/pull/11937/commits/7f00dbcd7dcef6c1354e36381e1501b5e95208ff">https://github.com/pandas-dev/pandas/pull/11937/commits/7f00dbcd7dcef6c1354e36381e1501b5e95208ff</a></p>
 <ul>
-<li>write your tests concurrently with your code</li>
 <li>write regression tests  (e.g. nosetests)</li>
 <li>use code coverage tools  (e.g. coverage)</li>
 <li>use code quality tools (e.g. flake8)</li>
@@ -12188,10 +12180,33 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Monitoring">Monitoring<a class="anchor-link" href="#Monitoring">&#182;</a></h2><p><a href="https://app.binarycanary.com/Dashboard">https://app.binarycanary.com/Dashboard</a></p>
+<p>Get an SMS alert if:</p>
+<ul>
+<li>A data delivery pipeline fails</li>
+<li>A certificate expires</li>
+<li>A server stops responding</li>
+<li>A database goes offline</li>
+<li>A backup fails</li>
+<li>A scheduled task fails</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Dashboards">Dashboards<a class="anchor-link" href="#Dashboards">&#182;</a></h2><p>This is a broader concept.</p>
 <ul>
 <li>KANBAN: <a href="https://en.wikipedia.org/wiki/Kanban">https://en.wikipedia.org/wiki/Kanban</a></li>
-<li>Surveymedia</li>
+<li>Surveymedia<ul>
+<li>Data aquisition</li>
+<li>Processes monitoring</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -12203,10 +12218,11 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Suggestions">Suggestions<a class="anchor-link" href="#Suggestions">&#182;</a></h2><ul>
-<li>pick the right tools for your process</li>
-<li>don't be afraid to write your own</li>
-<li>automate everything that can be automated</li>
-<li>test everything</li>
+<li>Pick the right tools for your process</li>
+<li>Don't be afraid to write your own</li>
+<li>Automate everything that can be automated</li>
+<li>Test everything</li>
+<li>Put everything in source control</li>
 <li>Do end-to-end integration as soon as possible.</li>
 <li>Mistakes increase in cost the longer it takes to find them</li>
 </ul>
@@ -12258,6 +12274,7 @@ a.anchor-link {
 <li><a href="https://try.jupyter.org/">https://try.jupyter.org/</a></li>
 <li><a href="https://coverage.readthedocs.io/en/coverage-4.3.4/">https://coverage.readthedocs.io/en/coverage-4.3.4/</a></li>
 <li><a href="http://flake8.pycqa.org/en/latest/">http://flake8.pycqa.org/en/latest/</a></li>
+<li><a href="https://app.binarycanary.com/Dashboard">https://app.binarycanary.com/Dashboard</a></li>
 </ul>
 
 </div>
@@ -12269,8 +12286,10 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Thank-you!">Thank you!<a class="anchor-link" href="#Thank-you!">&#182;</a></h1><p>Trevor Morgan</p>
-<p><a href="https://trvrm.github.io">https://trvrm.github.io</a>
-<a href="https://nooro.com/">https://nooro.com/</a></p>
+<ul>
+<li><a href="https://trvrm.github.io">https://trvrm.github.io</a></li>
+<li><a href="https://nooro.com/">https://nooro.com/</a></li>
+</ul>
 
 </div>
 </div>
